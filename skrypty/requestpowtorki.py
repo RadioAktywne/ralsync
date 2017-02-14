@@ -15,7 +15,7 @@ if lista:
     lista.sort()
     for plik in lista:
         subprocess.call(["/home/liquidsoap/requestpush.sh",
-                         args.slur, path2+plik])
+                         args.slur, path2 + plik])
         with open("/home/liquidsoap/request_" + args.slur + ".log", "r") as f:
             req.append(f.readline())
 else:
