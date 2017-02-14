@@ -25,7 +25,7 @@ else:
         for plik in lista:
             if pathlib.Path(path1 + plik).is_dir() is False:
                 subprocess.call(["/home/liquidsoap/requestpush.sh",
-                                 args.slur, path1+plik])
+                                 args.slur, path1 + plik])
                 with open("/home/liquidsoap/request_" + args.slur
                           + ".log", "r") as f:
                     req.append(f.readline())
