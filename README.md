@@ -36,16 +36,19 @@ request_nazwaaucyji.remove numerutworu
 ### utworzfolderaudycji.py
 1. Czyta nazwy uproszczone audycji z pliku generowanego przez rals.py
 2. Próbuje tworzyć foldery każdej z audycji - istniejące pomija
+
 ### archiwizacja.py
 Przyjmuje nazwę uproszczoną audycji
 1. Tworzy liste elementów w folderze "powtorka" danej audycji
 2. Jeśli element nie jest folderem to przenosi go do folderu "archiwum" danej audycji
 3. Tworzy liste elementów w fodlerze "powtorka/powtorka_puszki" danej audycji
 4. Usuwa te elementy
+
 ### puszka_przerzut.py
 Przyjmuje uproszczoną nazwę audycji
 1. Tworzy listę elementów w folderze "puszka" danej audycji
 2. Przemieszcza wszystkie elementy do folderu "powtorka_puszki" danej audycji
+
 ### requestpowtorki.py
 Przyjmuje uproszczoną nazwę audycji
 1. Tworzy listę elementów w folderze "powtorka_puszki" danej audycji
@@ -55,12 +58,15 @@ Przyjmuje uproszczoną nazwę audycji
 5. Jeżeli lista elementów była pusta to tworzy listę elementów z folderu "powtorka" danej audycji
 6. Działa analogicznie jak w przypadku pierwszej listy.
 7. Zapisuje zebrane numery utworów do pliku "queue_nazwauproszczona.log"
+
 ### requestpuszki.py
 Działa analogicznie do requestpowtorki.py ale zbiera pliki z folderu "puszka"
+
 ### clean.py
 Przyjmuje nazwę uproszczoną audycji
 1. Czyta kolejkę utworów z pliku "queue_nazwa uproszczona"
 2. Wykonuje "requestremove.sh nazwa_uproszczona numer_utworu" dla każdego utworu
+
 ### czyszczenie.py
 1. Tworzy liste elementów z folderu "audycje"
 2. Dla każdego z folderów próbuje zrobić listę elementów w podfolderze "powtorka"
