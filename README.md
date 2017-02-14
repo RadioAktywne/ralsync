@@ -67,6 +67,7 @@ Przyjmuje nazwę uproszczoną audycji
 3. Sprawdza rozmiar każdego z elementów z listy
 4. Jeżeli element ma poniżej 30mb zostaje usunięty
 5. Nazwy usuniętych plików są zapisywane do pliku "czyszczenie.log"
+
 ## Opis funkcji
 ### rals.py
 #### zmianakonca(koniec)
