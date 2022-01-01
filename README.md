@@ -1,4 +1,9 @@
+
 # ralsync
+To repozytorium nie jest już utrzymywane. Aktualny kod przeniesiono do https://github.com/RadioAktywne/docker-emisja.
+
+# Achwiwalna instrukcja
+
 ## Podsumowanie
 Nowy system emisyjny RA działa aktualnie w systemie tygodniowym. Ramówka znajduje się w odpowiednim spreadsheecie. Dane z tego spreadsheetu są użyte do odpiewdniej konfiguracji Liquidsoapa i Crona.
 Głównym elementem jest skrypt synchronizujący **rals.py**, reszta skryptów to skrypty wykonywane przez Crona
